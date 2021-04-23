@@ -1,0 +1,17 @@
+.intro {
+  padding: 110px 0 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-content {
+    width: 47%;
+    padding-right: 108px;
+  }
+  &-image {
+    width: 53%;
+  }
+}
+.intro-desc {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}

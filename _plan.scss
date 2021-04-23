@@ -1,0 +1,87 @@
+.plan {
+  padding: 75px;
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-item {
+    border: 1px solid #eee;
+    border-radius: 20px;
+    width: calc(33.33% - 30px);
+    padding: 75px 25px 65px 25px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.2s linear;
+    &-label {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 15px;
+      background-color: $pink;
+      color: #fff;
+      text-transform: capitalize;
+      border-radius: 0 20px;
+      font-size: 14px;
+    }
+  }
+  &-item:hover {
+    border-color: transparent;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.03);
+    .work-more {
+      color: white;
+      background-color: $primary-color;
+    }
+  }
+  &-item:hover .plan-feature-start {
+    background-color: $primary-color;
+    color: #fff;
+  }
+  &-name {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  &-price {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #ccc;
+  }
+  &-symbol {
+    vertical-align: top;
+  }
+  &-month {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  &-desc {
+    margin-bottom: 50px;
+  }
+  &-feature {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  &-feature-item:last-of-type {
+    margin-bottom: 35px;
+  }
+  &-feature-item {
+    color: $gray;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    padding-bottom: 35px;
+  }
+  &-feature-icon {
+    font-size: 25px;
+    margin-right: 10px;
+  }
+  &-feature-start {
+    margin: auto auto 0;
+    display: block;
+    width: max-content;
+    text-transform: capitalize;
+  }
+}
